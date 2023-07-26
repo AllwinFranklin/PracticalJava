@@ -1,3 +1,5 @@
+import concurrency.Concurrency;
+
 import java.lang.*;
 
 public class Main {
@@ -5,18 +7,20 @@ public class Main {
 //        GenericHolder<User> genericHolder = new GenericHolder<User>();
 //        genericHolder.printer(new User("Allwin Anto Franklin", "allwinanto360@gmail.com"));
 
-        GenericHolder<Integer> intGenericHolder = new GenericHolder<>();
-        intGenericHolder.printer(1);
+//        GenericHolder<Integer> intGenericHolder = new GenericHolder<>();
+//        intGenericHolder.printer(1);
+//
+//        GenericHolder<Float> floatGenericHolder = new GenericHolder<>();
+//        floatGenericHolder.printer(1.324F);
+//
+//        User employee1 = new User("Allwin", "allwin@gmail.com");
+//        User employee2 = new User("Franklin", "franklin@gmail.com");
+//        if (employee1.compareTo(employee2) < 0)
+//            System.out.println(employee1);
+//        else
+//            System.out.println(employee2);
 
-        GenericHolder<Float> floatGenericHolder = new GenericHolder<>();
-        floatGenericHolder.printer(1.324F);
-
-        User employee1 = new User("Allwin", "allwin@gmail.com");
-        User employee2 = new User("Franklin", "franklin@gmail.com");
-        if (employee1.compareTo(employee2) < 0)
-            System.out.println(employee1);
-        else
-            System.out.println(employee2);
+        Concurrency.run();
     }
 }
 
